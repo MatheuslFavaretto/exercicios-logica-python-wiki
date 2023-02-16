@@ -5,17 +5,14 @@
 #    A mensagem "Aprovado com Distinção", se a média for igual a dez. 
 
 
-nota1 = float(input('Digite a primeira nota: '))
-
-nota2 = float(input('Digite a segunda nota: '))
+nota1 = float(input('Digite a primeira nota do aluno: '))
+nota2 = float(input('Digite a segunda nota do aluno: '))
 
 media = (nota1 + nota2) / 2
 
-if media in range (7, 9):
-    print(f'Media {media} Aprovado')
-elif media == 10:
-    print(f'Media {media} Aprovado com Distinção')
+if media == 10:
+    print('Aprovado com Distinção')
+elif media >= 7:
+    print('Aprovado')
 else:
-    print(f'Media {media} Reprovado')
-
-print(media)
+    print('Reprovado')
